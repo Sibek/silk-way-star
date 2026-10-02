@@ -172,7 +172,6 @@ def render(events, duration):
                           f'X-TITLE="{address}";X-ADDRESS="{address}":geo:{coordinates}'])
         lines.extend(['SUMMARY:' + escape(data['summary']),
                       'LOCATION:' + escape(data['location']),
-                      'DESCRIPTION:' + data['url'],
                       'URL:' + data['url'], 'STATUS:CONFIRMED', 'TRANSP:OPAQUE',
                       'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-PT2H',
                       'DESCRIPTION:' + escape(data['summary']), 'END:VALARM', 'END:VEVENT'])
@@ -211,7 +210,7 @@ def main():
     events = {}
     for key, data in parsed.items():
         data['duration_minutes'] = args.duration
-        data['format_version'] = 3
+        data['format_version'] = 4
         previous = old.get(key)
         if previous and previous['data'] == data:
             events[key] = previous
