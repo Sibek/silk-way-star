@@ -174,7 +174,7 @@ def render(events, duration):
                       'LOCATION:' + escape(data['location']),
                       'DESCRIPTION:' + data['url'],
                       'URL:' + data['url'], 'STATUS:CONFIRMED', 'TRANSP:OPAQUE',
-                      'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-PT1H',
+                      'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-PT2H',
                       'DESCRIPTION:' + escape(data['summary']), 'END:VALARM', 'END:VEVENT'])
     lines.append('END:VCALENDAR')
     return ('\r\n'.join(fold(line) for line in lines) + '\r\n').encode('utf-8')
@@ -191,7 +191,7 @@ def write_if_changed(path, data):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--html', type=Path, help='Use a saved source page')
-    parser.add_argument('--duration', type=int, default=120, help='Approximate minutes; 0 omits the end time')
+    parser.add_argument('--duration', type=int, default=150, help='Approximate minutes; 0 omits the end time')
     args = parser.parse_args()
     if args.duration < 0:
         raise ValueError('Duration cannot be negative')
@@ -211,7 +211,7 @@ def main():
     events = {}
     for key, data in parsed.items():
         data['duration_minutes'] = args.duration
-        data['format_version'] = 2
+        data['format_version'] = 3
         previous = old.get(key)
         if previous and previous['data'] == data:
             events[key] = previous
