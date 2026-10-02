@@ -13,6 +13,10 @@ TEAM = 'Silk Way Star'
 BASE_YEAR = 2026
 ROOT = Path(__file__).resolve().parent
 MOSCOW = timezone(timedelta(hours=3))
+ARENA_ADDRESS = 'улица Крылатская, 2 с5 Москва, Россия, 121552'
+# Coordinates published by the skating school at this arena:
+# https://www.sport-katok.ru/sections/school/schedule/krylatsky/
+ARENA_COORDINATES = '55.754136,37.443334'
 MONTHS = {'января': 1, 'февраля': 2, 'марта': 3, 'апреля': 4,
           'мая': 5, 'июня': 6, 'июля': 7, 'августа': 8,
           'сентября': 9, 'октября': 10, 'ноября': 11, 'декабря': 12}
@@ -107,10 +111,13 @@ def parse(html):
             key = match_id[1]
             if key in events:
                 raise ValueError(f'Duplicate match {key}')
+            source_location = item.one('timetable__place').attrs.get('title', '').strip()
+            known_arena = 'Крылатская' in source_location and 'Спорт станция' in source_location
             events[key] = {
-                'summary': ' — '.join(teams),
+                'summary': ' - '.join(teams),
                 'start': utc(start),
-                'location': item.one('timetable__place').attrs.get('title', '').strip(),
+                'location': ARENA_ADDRESS if known_arena else source_location,
+                'coordinates': ARENA_COORDINATES if known_arena else None,
                 'round': item.one('timetable__round').text(),
                 'url': 'https://swhl.ru' + path,
             }
@@ -140,23 +147,32 @@ def render(events, duration):
     lines = ['BEGIN:VCALENDAR', 'VERSION:2.0',
              'PRODID:-//Sibek//Silk Way Star Calendar//RU',
              'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
-             'X-WR-CALNAME:Silk Way Star · SWHL 2026/27',
+             'NAME:Игры', 'X-WR-CALNAME:Игры',
              'X-WR-TIMEZONE:Europe/Moscow',
-             'REFRESH-INTERVAL;VALUE=DURATION:PT6H', 'X-PUBLISHED-TTL:PT6H']
+             'REFRESH-INTERVAL;VALUE=DURATION:PT6H', 'X-PUBLISHED-TTL:PT6H',
+             'BEGIN:VTIMEZONE', 'TZID:Europe/Moscow', 'X-LIC-LOCATION:Europe/Moscow',
+             'BEGIN:STANDARD', 'DTSTART:19700101T000000',
+             'TZOFFSETFROM:+0300', 'TZOFFSETTO:+0300', 'TZNAME:MSK',
+             'END:STANDARD', 'END:VTIMEZONE']
     for key, event in sorted(events.items(), key=lambda p: p[1]['data']['start']):
         data = event['data']
-        description = f"{data['round']}\nВремя начала — московское.\nИсточник: {data['url']}"
-        if duration:
-            description += f'\nДлительность {duration} мин. указана приблизительно; сайт сообщает только время начала.'
+        start = datetime.strptime(data['start'], '%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc).astimezone(MOSCOW)
         lines.extend(['BEGIN:VEVENT', f'UID:swhl-{key}@sibek.github.io',
                       f"DTSTAMP:{event['modified']}", f"LAST-MODIFIED:{event['modified']}",
-                      f"SEQUENCE:{event['sequence']}", f"DTSTART:{data['start']}"])
+                      f"SEQUENCE:{event['sequence']}",
+                      'DTSTART;TZID=Europe/Moscow:' + start.strftime('%Y%m%dT%H%M%S')])
         if duration:
-            start = datetime.strptime(data['start'], '%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc)
-            lines.append('DTEND:' + utc(start + timedelta(minutes=duration)))
+            lines.append('DTEND;TZID=Europe/Moscow:' + (start + timedelta(minutes=duration)).strftime('%Y%m%dT%H%M%S'))
+        if data.get('coordinates'):
+            coordinates = data['coordinates']
+            # Parameter values use quotes (commas are legal inside quotes).
+            address = data['location'].replace('^', '^^').replace('"', "^'").replace('\n', '^n')
+            lines.extend(['GEO:' + coordinates.replace(',', ';'),
+                          'X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;'
+                          f'X-TITLE="{address}";X-ADDRESS="{address}":geo:{coordinates}'])
         lines.extend(['SUMMARY:' + escape(data['summary']),
                       'LOCATION:' + escape(data['location']),
-                      'DESCRIPTION:' + escape(description),
+                      'DESCRIPTION:' + data['url'],
                       'URL:' + data['url'], 'STATUS:CONFIRMED', 'TRANSP:OPAQUE',
                       'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-PT1H',
                       'DESCRIPTION:' + escape(data['summary']), 'END:VALARM', 'END:VEVENT'])
@@ -195,6 +211,7 @@ def main():
     events = {}
     for key, data in parsed.items():
         data['duration_minutes'] = args.duration
+        data['format_version'] = 2
         previous = old.get(key)
         if previous and previous['data'] == data:
             events[key] = previous

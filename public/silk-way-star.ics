@@ -3,488 +3,519 @@ VERSION:2.0
 PRODID:-//Sibek//Silk Way Star Calendar//RU
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Silk Way Star · SWHL 2026/27
+NAME:Игры
+X-WR-CALNAME:Игры
 X-WR-TIMEZONE:Europe/Moscow
 REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+X-LIC-LOCATION:Europe/Moscow
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:swhl-5890243@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261004T141500Z
-DTEND:20261004T161500Z
-SUMMARY:Silk Way Star — Прогресс 77
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 1 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890243\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261004T171500
+DTEND;TZID=Europe/Moscow:20261004T191500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - Прогресс 77
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890243
 URL:https://swhl.ru/match/5890243
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — Прогресс 77
+DESCRIPTION:Silk Way Star - Прогресс 77
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890251@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261011T114500Z
-DTEND:20261011T134500Z
-SUMMARY:Шанс — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 2 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890251\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261011T144500
+DTEND;TZID=Europe/Moscow:20261011T164500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Шанс - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890251
 URL:https://swhl.ru/match/5890251
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Шанс — Silk Way Star
+DESCRIPTION:Шанс - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890252@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261017T131500Z
-DTEND:20261017T151500Z
-SUMMARY:Silk Way Star — ХК Физрук
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 3 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890252\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261017T161500
+DTEND;TZID=Europe/Moscow:20261017T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - ХК Физрук
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890252
 URL:https://swhl.ru/match/5890252
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — ХК Физрук
+DESCRIPTION:Silk Way Star - ХК Физрук
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890258@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261024T131500Z
-DTEND:20261024T151500Z
-SUMMARY:Красная Звезда — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 4 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890258\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261024T161500
+DTEND;TZID=Europe/Moscow:20261024T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Красная Звезда - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890258
 URL:https://swhl.ru/match/5890258
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Красная Звезда — Silk Way Star
+DESCRIPTION:Красная Звезда - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890269@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261108T141500Z
-DTEND:20261108T161500Z
-SUMMARY:Silk Way Star — Зверобои
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 6 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890269\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261108T171500
+DTEND;TZID=Europe/Moscow:20261108T191500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - Зверобои
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890269
 URL:https://swhl.ru/match/5890269
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — Зверобои
+DESCRIPTION:Silk Way Star - Зверобои
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890272@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261114T131500Z
-DTEND:20261114T151500Z
-SUMMARY:ALLIANCE — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 7 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890272\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261114T161500
+DTEND;TZID=Europe/Moscow:20261114T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:ALLIANCE - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890272
 URL:https://swhl.ru/match/5890272
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:ALLIANCE — Silk Way Star
+DESCRIPTION:ALLIANCE - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890279@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261121T154500Z
-DTEND:20261121T174500Z
-SUMMARY:Silk Way Star — СВЛ
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 8 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890279\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261121T184500
+DTEND;TZID=Europe/Moscow:20261121T204500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - СВЛ
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890279
 URL:https://swhl.ru/match/5890279
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — СВЛ
+DESCRIPTION:Silk Way Star - СВЛ
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890283@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261128T154500Z
-DTEND:20261128T174500Z
-SUMMARY:Катюша — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 9 тур\nВремя 
- начала — московское.\nИсточник: https://swhl.ru/
- match/5890283\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261128T184500
+DTEND;TZID=Europe/Moscow:20261128T204500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Катюша - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890283
 URL:https://swhl.ru/match/5890283
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Катюша — Silk Way Star
+DESCRIPTION:Катюша - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890289@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261206T114500Z
-DTEND:20261206T134500Z
-SUMMARY:Silk Way Star — ДинамиД
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 10 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890289\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261206T144500
+DTEND;TZID=Europe/Moscow:20261206T164500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - ДинамиД
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890289
 URL:https://swhl.ru/match/5890289
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — ДинамиД
+DESCRIPTION:Silk Way Star - ДинамиД
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890294@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261212T131500Z
-DTEND:20261212T151500Z
-SUMMARY:Б5 — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 11 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890294\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261212T161500
+DTEND;TZID=Europe/Moscow:20261212T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Б5 - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890294
 URL:https://swhl.ru/match/5890294
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Б5 — Silk Way Star
+DESCRIPTION:Б5 - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890298@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261220T141500Z
-DTEND:20261220T161500Z
-SUMMARY:Прогресс 77 — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 12 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890298\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261220T171500
+DTEND;TZID=Europe/Moscow:20261220T191500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Прогресс 77 - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890298
 URL:https://swhl.ru/match/5890298
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Прогресс 77 — Silk Way Star
+DESCRIPTION:Прогресс 77 - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890306@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20261227T114500Z
-DTEND:20261227T134500Z
-SUMMARY:Silk Way Star — Шанс
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 13 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890306\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20261227T144500
+DTEND;TZID=Europe/Moscow:20261227T164500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - Шанс
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890306
 URL:https://swhl.ru/match/5890306
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — Шанс
+DESCRIPTION:Silk Way Star - Шанс
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890307@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270109T131500Z
-DTEND:20270109T151500Z
-SUMMARY:ХК Физрук — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 14 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890307\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270109T161500
+DTEND;TZID=Europe/Moscow:20270109T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:ХК Физрук - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890307
 URL:https://swhl.ru/match/5890307
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:ХК Физрук — Silk Way Star
+DESCRIPTION:ХК Физрук - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890313@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270116T131500Z
-DTEND:20270116T151500Z
-SUMMARY:Silk Way Star — Красная Звезда
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 15 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890313\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270116T161500
+DTEND;TZID=Europe/Moscow:20270116T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - Красная Звезда
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890313
 URL:https://swhl.ru/match/5890313
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — Красная Звезда
+DESCRIPTION:Silk Way Star - Красная Звезда
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890324@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270131T141500Z
-DTEND:20270131T161500Z
-SUMMARY:Зверобои — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 17 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890324\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270131T171500
+DTEND;TZID=Europe/Moscow:20270131T191500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Зверобои - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890324
 URL:https://swhl.ru/match/5890324
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Зверобои — Silk Way Star
+DESCRIPTION:Зверобои - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890327@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270206T131500Z
-DTEND:20270206T151500Z
-SUMMARY:Silk Way Star — ALLIANCE
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 18 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890327\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270206T161500
+DTEND;TZID=Europe/Moscow:20270206T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - ALLIANCE
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890327
 URL:https://swhl.ru/match/5890327
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — ALLIANCE
+DESCRIPTION:Silk Way Star - ALLIANCE
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890334@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270213T154500Z
-DTEND:20270213T174500Z
-SUMMARY:СВЛ — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 19 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890334\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270213T184500
+DTEND;TZID=Europe/Moscow:20270213T204500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:СВЛ - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890334
 URL:https://swhl.ru/match/5890334
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:СВЛ — Silk Way Star
+DESCRIPTION:СВЛ - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890338@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270220T154500Z
-DTEND:20270220T174500Z
-SUMMARY:Silk Way Star — Катюша
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 20 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890338\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270220T184500
+DTEND;TZID=Europe/Moscow:20270220T204500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - Катюша
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890338
 URL:https://swhl.ru/match/5890338
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — Катюша
+DESCRIPTION:Silk Way Star - Катюша
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890344@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270228T114500Z
-DTEND:20270228T134500Z
-SUMMARY:ДинамиД — Silk Way Star
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 21 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890344\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270228T144500
+DTEND;TZID=Europe/Moscow:20270228T164500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:ДинамиД - Silk Way Star
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890344
 URL:https://swhl.ru/match/5890344
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:ДинамиД — Silk Way Star
+DESCRIPTION:ДинамиД - Silk Way Star
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:swhl-5890349@sibek.github.io
-DTSTAMP:20261002T113902Z
-LAST-MODIFIED:20261002T113902Z
-SEQUENCE:0
-DTSTART:20270306T131500Z
-DTEND:20270306T151500Z
-SUMMARY:Silk Way Star — Б5
-LOCATION:Спорт станция\, Москва\, ул. Крылатск
- ая\, вл. 2\, стр. 5
-DESCRIPTION:Регулярный чемпионат\, 22 тур\nВремя
-  начала — московское.\nИсточник: https://swhl.ru
- /match/5890349\nДлительность 120 мин. указана при
- близительно\; сайт сообщает только время
-  начала.
+DTSTAMP:20261002T120222Z
+LAST-MODIFIED:20261002T120222Z
+SEQUENCE:1
+DTSTART;TZID=Europe/Moscow:20270306T161500
+DTEND;TZID=Europe/Moscow:20270306T181500
+GEO:55.754136;37.443334
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=100;X-TITLE="улиц
+ а Крылатская, 2 с5 Москва, Россия, 121552";X-ADDRE
+ SS="улица Крылатская, 2 с5 Москва, Россия, 121
+ 552":geo:55.754136,37.443334
+SUMMARY:Silk Way Star - Б5
+LOCATION:улица Крылатская\, 2 с5 Москва\, Росси
+ я\, 121552
+DESCRIPTION:https://swhl.ru/match/5890349
 URL:https://swhl.ru/match/5890349
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT1H
-DESCRIPTION:Silk Way Star — Б5
+DESCRIPTION:Silk Way Star - Б5
 END:VALARM
 END:VEVENT
 END:VCALENDAR
