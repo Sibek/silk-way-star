@@ -1,13 +1,11 @@
-name: Update and publish calendar
+name: Publish calendar
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '17 */6 * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,29 +15,12 @@ concurrency:
 
 jobs:
   publish:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Fetch schedule and update calendar
-        id: refresh
-        continue-on-error: true
-        run: python update_calendar.py
-      - name: Save changes
-        if: steps.refresh.outcome == 'success'
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add schedule.json public/silk-way-star.ics
-          if ! git diff --cached --quiet; then
-            git commit -m 'Update SWHL schedule'
-            git push
-          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -47,8 +28,3 @@ jobs:
       - name: Publish subscription
         id: deploy
         uses: actions/deploy-pages@v4
-      - name: Report source failure
-        if: steps.refresh.outcome == 'failure'
-        run: |
-          echo 'Published the last good calendar. Source refresh failed; see the fetch step.' >> "$GITHUB_STEP_SUMMARY"
-          exit 1
