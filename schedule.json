@@ -1,0 +1,242 @@
+{
+  "5890243": {
+    "data": {
+      "summary": "Silk Way Star — Прогресс 77",
+      "start": "20261004T141500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 1 тур",
+      "url": "https://swhl.ru/match/5890243",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890251": {
+    "data": {
+      "summary": "Шанс — Silk Way Star",
+      "start": "20261011T114500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 2 тур",
+      "url": "https://swhl.ru/match/5890251",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890252": {
+    "data": {
+      "summary": "Silk Way Star — ХК Физрук",
+      "start": "20261017T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 3 тур",
+      "url": "https://swhl.ru/match/5890252",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890258": {
+    "data": {
+      "summary": "Красная Звезда — Silk Way Star",
+      "start": "20261024T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 4 тур",
+      "url": "https://swhl.ru/match/5890258",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890269": {
+    "data": {
+      "summary": "Silk Way Star — Зверобои",
+      "start": "20261108T141500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 6 тур",
+      "url": "https://swhl.ru/match/5890269",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890272": {
+    "data": {
+      "summary": "ALLIANCE — Silk Way Star",
+      "start": "20261114T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 7 тур",
+      "url": "https://swhl.ru/match/5890272",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890279": {
+    "data": {
+      "summary": "Silk Way Star — СВЛ",
+      "start": "20261121T154500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 8 тур",
+      "url": "https://swhl.ru/match/5890279",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890283": {
+    "data": {
+      "summary": "Катюша — Silk Way Star",
+      "start": "20261128T154500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 9 тур",
+      "url": "https://swhl.ru/match/5890283",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890289": {
+    "data": {
+      "summary": "Silk Way Star — ДинамиД",
+      "start": "20261206T114500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 10 тур",
+      "url": "https://swhl.ru/match/5890289",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890294": {
+    "data": {
+      "summary": "Б5 — Silk Way Star",
+      "start": "20261212T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 11 тур",
+      "url": "https://swhl.ru/match/5890294",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890298": {
+    "data": {
+      "summary": "Прогресс 77 — Silk Way Star",
+      "start": "20261220T141500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 12 тур",
+      "url": "https://swhl.ru/match/5890298",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890306": {
+    "data": {
+      "summary": "Silk Way Star — Шанс",
+      "start": "20261227T114500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 13 тур",
+      "url": "https://swhl.ru/match/5890306",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890307": {
+    "data": {
+      "summary": "ХК Физрук — Silk Way Star",
+      "start": "20270109T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 14 тур",
+      "url": "https://swhl.ru/match/5890307",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890313": {
+    "data": {
+      "summary": "Silk Way Star — Красная Звезда",
+      "start": "20270116T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 15 тур",
+      "url": "https://swhl.ru/match/5890313",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890324": {
+    "data": {
+      "summary": "Зверобои — Silk Way Star",
+      "start": "20270131T141500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 17 тур",
+      "url": "https://swhl.ru/match/5890324",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890327": {
+    "data": {
+      "summary": "Silk Way Star — ALLIANCE",
+      "start": "20270206T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 18 тур",
+      "url": "https://swhl.ru/match/5890327",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890334": {
+    "data": {
+      "summary": "СВЛ — Silk Way Star",
+      "start": "20270213T154500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 19 тур",
+      "url": "https://swhl.ru/match/5890334",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890338": {
+    "data": {
+      "summary": "Silk Way Star — Катюша",
+      "start": "20270220T154500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 20 тур",
+      "url": "https://swhl.ru/match/5890338",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890344": {
+    "data": {
+      "summary": "ДинамиД — Silk Way Star",
+      "start": "20270228T114500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 21 тур",
+      "url": "https://swhl.ru/match/5890344",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  },
+  "5890349": {
+    "data": {
+      "summary": "Silk Way Star — Б5",
+      "start": "20270306T131500Z",
+      "location": "Спорт станция, Москва, ул. Крылатская, вл. 2, стр. 5",
+      "round": "Регулярный чемпионат, 22 тур",
+      "url": "https://swhl.ru/match/5890349",
+      "duration_minutes": 120
+    },
+    "sequence": 0,
+    "modified": "20261002T113902Z"
+  }
+}
